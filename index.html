@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_23</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<main class="page">
+			<section class="page__test">
+				<div class="page__container">
+					<article class="page__text-synt">
+						<h2 class="title">Оператори </h2>
+						<div class="page__task">
+							1. Якщо ми намагаємося вирахувати число то слід використовувати - так як це поверне строку в
+							число і виконається математична дія віднімання,
+							якщо ж ми намагаємося поєднати число і строку то слід використовувати +;
+						</div>
+						<div class="page__task">
+							2. так поверне 770 так як виконаєтсья дія множення;
+						</div>
+						<div class="page__task">
+							4. userCounter++ => ++userCounter не поверне одиницю, для такого роду дій необхідно
+							використовувати префіксний метод, а не постсуфіксний. Якщо необхідно отримати значення до
+							збільшення то потрібна постсуфіксна форма, або ж якщо ми хочемо збільшити/зменшити змінну
+							тоді немає ніякої різниці що використовувати, ТІЛЬКИ ТОДІ КОЛИ ЦЯ ЗМІННА БІЛЬШЕ НЕ
+							ВИКОРИСТОВУЄТЬСЯ;
+						</div>
+						<div class="page__task">
+							5. Не поверне 18 так я обидва варіанта true то повернеться перший тобто 11;
+						</div>
+						<div class="page__task">
+							6. оператор ?? повертає аргумент, якщо аргумент null або undefined , то повертає другий
+							аргумент.
+						</div>
+					</article>
+					<article class="page__text-let">
+						<h3 class="title">Умовні оператори</h3>
+						<div class="page__task">
+							1. НЕ вірно бо такий запис не перетворює рядок на число;
+						</div>
+						<div class="page__task">
+							Всі інші вірні.
+						</div>
+					</article>
+					<article class="page__type-data">
+						<h3 class="title">Цикли</h3>
+						<div class="page__task"> 1. let num = 0; while (num < 6) { console.log(num); num++; } </div>
+								<div class="page__task"> 1.2 for (let num=0; num < 6; num++) { console.log(num); }
+										</div>
+										<div class="page__task"> 1.3 let num=0; do { console.log(num); num++;} while
+											(num < 6); </div>
+												<div class="page__task">
+													2. ні, останнім числом буде 1;
+												</div>
+												<div class="page__task">
+													3. firstFor: for (let num = 0; num < 2; num++) { for (let size=0;
+														size < 3; size++) { console.log(size); if (size===1) { break
+														firstFor; } console.log(`Stoped, num=${size}`);} } </div>
+					</article>
+					<article class="page__text-let">
+						<h3 class="title">Числа</h3>
+						<div class="page__task">
+							1. let sourceNum = 1.005 + Number.EPSILON;
+							let numFour = Math.round(sourceNum * 100) / 100;
+							console.log(numFour); => 1.01;
+						</div>
+						<div class="page__task">
+							2. let value = parseFloat("135.58px");
+							console.log(value);
+						</div>
+						<div class="page__task">
+							3. let valueTwo = 58 + "Frilancer";
+							if (valueTwo == NaN); {
+							console.log(Number(valueTwo));
+							console.log(isNaN(valueTwo));
+							}
+						</div>
+						<div class="page__task">
+							4. let numbOne = 10;
+							let numbTwo = 58;
+							let numbThree = 39;
+							let numbFour = -150;
+							let numbFive = 0;
+							console.log(Math.max(numbOne, numbTwo, numbThree, numbFour, numbFive));
+						</div>
+						<div class="page__task">
+							5. let num = Math.floor(58.858);
+							console.log(num);
+						</div>
+					</article>
+					<article class="page__text-let">
+						<h3 class="title">Рядки</h3>
+						<div class="page__task">
+							1. let fls = "frilancer"; let text = `Hi! Im ${fls}`; console.log(text);
+							не правильна так як встановленний не правильний лапки;
+						</div>
+						<div class="page__task">
+							2.let text = `фрілансер`; console.log(text[5]);
+						</div>
+						<div class="page__task">
+							3. відбуваєтсья додавання рядків, let text = 123 + `456`;
+							console.log(text);
+						</div>
+						<div class="page__task">
+							4. let text = `фрілансер`;
+							console.log(text.toLocaleUpperCase());
+						</div>
+						<div class="page__task">
+							5. let text = `фрілансер`;
+							console.log(text.slice(3, 6));
+						</div>
+						<div class="page__task">
+							6.let text = 'фрілансер';
+							console.log(text.includes('лан', 3));
+							('лан', 3) => true, ('лан', 3) => false
+						</div>
+					</article>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
